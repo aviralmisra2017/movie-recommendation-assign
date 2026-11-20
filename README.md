@@ -53,7 +53,7 @@ The application:
 ```text
 MovieRecommendation/
 │
-├── app.py
+├── movie_recommend.py
 ├── movies.pkl
 ├── similarity.pkl
 ├── requirements.txt
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 ### 4. Run the application
 
 ```bash
-streamlit run app.py
+streamlit run movie_recommend.py
 ```
 
 The application will be available at:
@@ -128,7 +128,7 @@ The application can be deployed using Render.
 |---|---|
 | Environment | Python |
 | Build Command | `pip install -r requirements.txt` |
-| Start Command | `streamlit run app.py --server.port $PORT --server.address 0.0.0.0` |
+| Start Command | `streamlit run movie_recommend.py --server.port $PORT --server.address 0.0.0.0` |
 
 Ensure the required pickle files are available in the deployed application.
 
