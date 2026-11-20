@@ -7,7 +7,7 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 tf=TfidfVectorizer(max_features=5000,ngram_range=(2,2))
 df_recommendation = pickle.load(open("movies.pkl", "rb"))
-tf = TfidfVectorizer(max_features=5000, ngram_range=(2,2))
+tf = TfidfVectorizer(max_features=1000, ngram_range=(2,2))
 tf_idf_transform = tf.fit_transform(
     df_recommendation['clean_text']
 )
